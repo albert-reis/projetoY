@@ -35,3 +35,21 @@ h1, p, a, span{
 	height: 80%;
 	width: 80%;
 }
+
+.text-painel{
+	font-size: 18px;
+	font-weight: bold !important;
+	color: black !important;
+}
+
+.text-painel-select{
+	font-size: 18px;
+	font-weight: bold !important;
+	color: red !important;
+	background-color: black;
+}
+
+.text-painel:hover{
+	font-size: 20px;
+	color: rgb(255, 0, 0) !important;
+}
