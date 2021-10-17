@@ -1,97 +1,105 @@
 <!doctype html>
 <html lang="pt-br">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="Marcelo Albert Santana dos Reis, Ernani Alexandre Wippel Neto e Vitor Krowczuk Beirão">
-        <title>Listagem de usuários</title>
 
-        <!-- CSS -->
-        <link href="assets/libs/bootstrap-5.1.1-dist/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="assets/libs/select2/select2.min.css" rel="stylesheet" />
-        <link href="assets/libs/select2/select2-bootstrap-5-theme.min.css" rel="stylesheet" />
-        <link href="assets/libs/DataTables/datatables.css" rel="stylesheet" />
-        <link href="assets/css/dashboard.css" rel="stylesheet" />
-        <link href="assets/css/style.css" rel="stylesheet" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow" style="background-color: rgb(0, 0, 0) !important;">
-            <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#" style="background-color: crimson;">Administrativo Wippel</a>
-            <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </header>
-        <div class="container-fluid">
-            <div class="row">
-                <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
-                    <div class="position-sticky pt-3">
-                        <ul class="nav flex-column">
-                            <li class="nav-item">
-                                <a class="nav-link text-painel" aria-current="page" href="index.html">
-                                    <span data-feather="home"></span>
-                                    Dashboard
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-painel" href="cadastrar.html">
-                                    <span class="text-painel" data-feather="plus-circle"></span>
-                                    Cadastrar Obras
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-painel" href="cadastrarUsuario.html">
-                                    <span data-feather="plus-circle"></span>
-                                    Cadastrar Usuários
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-painel-select" href="listarUsuario.html">
-                                    <span data-feather="list"></span>
-                                    Listar Usuários
-                                </a>
-                            </li>
-                    </div>
-                </nav>
-                <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-                    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                        <h1 class="h2">Usuários administrativos</h1>
-                    </div>
-                    <div class="table-responsive">
-                        <table class="table table-striped table-sm data-table">
-                            <thead>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Marcelo Albert Santana dos Reis, Ernani Alexandre Wippel Neto e Vitor Krowczuk Beirão">
+    <title>Listagem de usuários</title>
+
+    <!-- CSS -->
+    <link href="assets/libs/bootstrap-5.1.1-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/libs/select2/select2.min.css" rel="stylesheet" />
+    <link href="assets/libs/select2/select2-bootstrap-5-theme.min.css" rel="stylesheet" />
+    <link href="assets/libs/DataTables/datatables.css" rel="stylesheet" />
+    <link href="assets/css/dashboard.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow"
+        style="background-color: rgb(0, 0, 0) !important;">
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#" style="background-color: crimson;">Administrativo
+            Wippel</a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+                <div class="position-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link text-painel" aria-current="page" href="index.html">
+                                <span data-feather="home"></span>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-painel" href="cadastrar.html">
+                                <span class="text-painel" data-feather="plus-circle"></span>
+                                Cadastrar Obras
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-painel" href="cadastrarUsuario.html">
+                                <span data-feather="plus-circle"></span>
+                                Cadastrar Usuários
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-painel-select" href="listarUsuario.html">
+                                <span data-feather="list"></span>
+                                Listar Usuários
+                            </a>
+                        </li>
+                </div>
+            </nav>
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <div
+                    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Usuários administrativos</h1>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-striped table-sm data-table">
+                        <thead>
                             <tr>
                                 <th scope="col">Nome</th>
                                 <th scope="col">Data de criação</th>
                                 <th scope="col">Ações</th>
                             </tr>
-                            </thead>
-                            <!-- As linhas de dados da tabela são gerados no arquivo main.js (função loadItemsTable()) -->
-                            <tbody id="itemsBody">
-                            </tbody>
-                        </table>
-                    </div>
-                </main>
-            </div>
+                        </thead>
+                        <!-- As linhas de dados da tabela são gerados no arquivo main.js (função loadItemsTable()) -->
+                        <tbody id="itemsBody">
+                        </tbody>
+                    </table>
+                </div>
+            </main>
         </div>
-        <!-- JavaScript -->
-        <script src="assets/js/jquery-3.6.0.min.js"></script>
-        <script src="assets/libs/bootstrap-5.1.1-dist/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/libs/DataTables/datatables.js"></script>
-        <script src="assets/libs/select2/select2.min.js"></script>
-        <script src="assets/js/feather.min.js"></script>
-        <script src="assets/js/main.js"></script>
-        <script>
-            window.onload = function() {
-                // Chama a função para adicionar o conteúdo da tabela
-                loadItemsTable();
+    </div>
+    <!-- JavaScript -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/libs/bootstrap-5.1.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/DataTables/datatables.js"></script>
+    <script src="assets/libs/select2/select2.min.js"></script>
+    <script src="assets/js/feather.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        window.onload = function () {
+            // Chama a função para adicionar o conteúdo da tabela
+            loadItemsTable();
 
-                // Depois do conteúdo estar na tabela, aplica o datatable na tabela
-                $('.data-table').DataTable();
-            };
-        </script>
-    </body>
+            // Depois do conteúdo estar na tabela, aplica o datatable na tabela
+            $('.data-table').DataTable();
+        };
+    </script>
+</body>
+
 </html>
