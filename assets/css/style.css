@@ -1,14 +1,38 @@
-@media (max-width: 768px) {
-	.btn-sair {
-		/*width: 100%;
-        text-align: center;*/
-		margin-right: 25%;
-	}
-	.sidebar {
-		top: 3rem;
-	}
+footer{
+	background-color: black;
 }
 
-.select2 {
-	width: 100%!important;
+footer a{
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	margin-top: 50px;
+}
+
+.img-menu{
+	background-image: url(../../img/menu.jpg) !important;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+h1, p, a, span{
+	font-weight: bold;
+	color: black;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.text{
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.text-title{
+	margin-top: 10px;
+}
+.text-menu{
+	color:red;
+	font-weight: bold;
+	background-color: black;
+	border-radius: 5px;
+}
+.logo-nav{
+	height: 80%;
+	width: 80%;
 }

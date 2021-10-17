@@ -1,9 +1,10 @@
 .nav-buttons{
     text-decoration: none;
-    color: aqua !important ; 
+    color: white !important ; 
+    font-weight: bold;
 }
 .nav-buttons:hover{
-    color: rgba(0, 255, 255, 0.575) !important;
+    color:red !important;
 }
 
 .site-header{
