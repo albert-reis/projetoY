@@ -1,0 +1,14 @@
+@media (max-width: 768px) {
+	.btn-sair {
+		/*width: 100%;
+        text-align: center;*/
+		margin-right: 25%;
+	}
+	.sidebar {
+		top: 3rem;
+	}
+}
+
+.select2 {
+	width: 100%!important;
+}
