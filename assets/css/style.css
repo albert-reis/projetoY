@@ -45,11 +45,11 @@ h1, p, a, span{
 .text-painel-select{
 	font-size: 18px;
 	font-weight: bold !important;
-	color: red !important;
+	color: white !important;
 	background-color: black;
 }
 
 .text-painel:hover{
 	font-size: 20px;
-	color: rgb(255, 0, 0) !important;
+	color: red !important;
 }
